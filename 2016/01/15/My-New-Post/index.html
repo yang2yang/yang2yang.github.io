@@ -57,16 +57,28 @@
 
 
 
-<meta name="description" content="随便记录学习点滴">
+<meta name="description" content="Hello,blog从开始有搭建一个博客的想法到现在也是过去了大概有10天吧，中间也是各种坑。不吐槽一下，实在是对不起这流去的岁月。
+刚开始想使用Django直接写一个博客，挂到自己的服务器上去。首先就是熟悉Django的基本语法，这其实都没有什么，也就是了解一下Django的MTV的模式，花点时间也是很快就可以上手，但是很快就遇到两个难点就是:
+
+没有CMS，或者说没有优秀的CMS
+前端很难写，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="My New Post">
+<meta property="og:title" content="The first">
 <meta property="og:url" content="http://yoursite.com/2016/01/15/My-New-Post/index.html">
-<meta property="og:site_name" content="Box">
-<meta property="og:description" content="随便记录学习点滴">
-<meta property="og:updated_time" content="2016-01-15T15:04:56.000Z">
+<meta property="og:site_name" content="Gift">
+<meta property="og:description" content="Hello,blog从开始有搭建一个博客的想法到现在也是过去了大概有10天吧，中间也是各种坑。不吐槽一下，实在是对不起这流去的岁月。
+刚开始想使用Django直接写一个博客，挂到自己的服务器上去。首先就是熟悉Django的基本语法，这其实都没有什么，也就是了解一下Django的MTV的模式，花点时间也是很快就可以上手，但是很快就遇到两个难点就是:
+
+没有CMS，或者说没有优秀的CMS
+前端很难写，">
+<meta property="og:updated_time" content="2016-01-16T10:10:36.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="My New Post">
-<meta name="twitter:description" content="随便记录学习点滴">
+<meta name="twitter:title" content="The first">
+<meta name="twitter:description" content="Hello,blog从开始有搭建一个博客的想法到现在也是过去了大概有10天吧，中间也是各种坑。不吐槽一下，实在是对不起这流去的岁月。
+刚开始想使用Django直接写一个博客，挂到自己的服务器上去。首先就是熟悉Django的基本语法，这其实都没有什么，也就是了解一下Django的MTV的模式，花点时间也是很快就可以上手，但是很快就遇到两个难点就是:
+
+没有CMS，或者说没有优秀的CMS
+前端很难写，">
 
 
 
@@ -84,7 +96,7 @@
   };
 </script>
 
-  <title> My New Post | Box </title>
+  <title> The first | Gift </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -113,7 +125,7 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Box</span>
+      <span class="site-title">Gift</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -214,7 +226,7 @@
             
             
               
-                My New Post
+                The first
               
             
           </h1>
@@ -259,7 +271,18 @@
       
 
       
-        
+        <h2 id="Hello_2Cblog"><a href="#Hello_2Cblog" class="headerlink" title="Hello,blog"></a>Hello,blog</h2><p>从开始有搭建一个博客的想法到现在也是过去了大概有10天吧，中间也是各种<strong>坑</strong>。不吐槽一下，实在是对不起这流去的岁月。</p>
+<p>刚开始想使用<strong>Django</strong>直接写一个博客，挂到自己的服务器上去。首先就是熟悉<strong>Django</strong>的基本语法，这其实都没有什么，也就是了解一下<strong>Django</strong>的MTV的模式，花点时间也是很快就可以上手，但是很快就遇到两个难点就是:</p>
+<ol>
+<li>没有<strong>CMS</strong>，或者说没有优秀的<strong>CMS</strong></li>
+<li>前端很难写，或者说高逼格的界面很难写</li>
+</ol>
+<p>第二点通过一番搜索之后，也是让我找到了<a href="http://www.css3templates.co.uk/templates.html" target="_blank" rel="external">CSS模板</a>这个好东西，但是第一点已经不是那么好解决了，找到两个方法，一种是使用其他django中的<a href="https://github.com/klen/django_markdown" target="_blank" rel="external">django_markdown</a>的包直接集成到内置的<strong>admin</strong>中，另一种方法是使用据说很好用的<a href="http://www.django-cms.org/en/" target="_blank" rel="external">django CMS</a>这个库。</p>
+<p>好的，现在讲讲第一种解决方式中，本来前端模板渲染用的<a href="https://github.com/trentm/django-markdown-deux" target="_blank" rel="external">django-markdown-deux</a>,突然之间不知道是因为使用<a href="http://www.css3templates.co.uk/templates.html" target="_blank" rel="external">CSS模板</a>的原因，还是因为其他什么原因并不能正常的渲染<strong>markdown</strong>语法。</p>
+<p>第二种解决方案中，发现<a href="http://www.django-cms.org/en/" target="_blank" rel="external">django CMS</a>的文档中写的是支持到python2.7,恩，用的就是python2.7，但是还要<strong>requires Django 1.8</strong>,刚开始测试的时候使用的Django版本还是1.9.0，但是中间不知道什么原因(真的是不知道还是后来才发现的)，就升级到了<strong>Django 1.9.1</strong>，这个是开发版。好吧，最新的版本就并不能支持<a href="http://www.django-cms.org/en/" target="_blank" rel="external">django CMS</a>,这也就罢了，但是最重要的是<a href="http://www.django-cms.org/en/" target="_blank" rel="external">django CMS</a>的使用，并不是想之前的包一样，只需要导入或者说只需要将这个包<code>install</code>一下，然后放在<code>installed app</code>下就可以的，这个东西还要重建自己的项目。这一点就不是短期内可以实现的了。到这里，才发现开始写博客的时候，没有对所使用的架构进行好好的构思，好吧，其实在没有接触的情况下，也无法进行合理的架构。其实，即使是现在也是不能。</p>
+<p>写到这，其实不是很在意界面的话，基本的功能都已经实现了，就差部署了。但是还是总感觉不对，然后就想看看其他一些成熟的<strong>博客建立工具</strong>到底是怎么弄的，知乎上搜索了一下，选了两个，一个是<a href="https://cn.wordpress.org/" target="_blank" rel="external">wordpress</a>,一个是<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">hexo</a>,都使用相应的教程走了一遍，比如<a href="https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-on-ubuntu-14-04" target="_blank" rel="external">wordpress搭建教程</a>,还有<a href="http://www.cnblogs.com/zhcncn/p/4097881.html" target="_blank" rel="external">hexo搭建教程</a>。都是非常不错的教程，能够很快的搭建成功。最后就有了现在这个blog，才发现，现在搭建blog这个轮子也是造的那么好用和实用了呢，还是得先用了再说。</p>
+<p>最后的最后，才发现，这篇好像少了一点图片，但是就这样吧。</p>
+
       
     </div>
 
@@ -303,7 +326,7 @@
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2016/01/15/My-New-Post/"
-           data-title="My New Post" data-url="http://yoursite.com/2016/01/15/My-New-Post/">
+           data-title="The first" data-url="http://yoursite.com/2016/01/15/My-New-Post/">
       </div>
     
   </div>
@@ -343,7 +366,7 @@
                src="/images/head.jpg"
                alt="yang2yang" />
           <p class="site-author-name" itemprop="name">yang2yang</p>
-          <p class="site-description motion-element" itemprop="description">随便记录学习点滴</p>
+          <p class="site-description motion-element" itemprop="description">随手记录学习点滴</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
@@ -411,7 +434,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hello_2Cblog"><span class="nav-number">1.</span> <span class="nav-text">Hello,blog</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
