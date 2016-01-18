@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="blog," />
+  <meta name="keywords" content="Linux shell," />
 
 
 
@@ -57,28 +57,22 @@
 
 
 
-<meta name="description" content="Hello,blog从开始有搭建一个博客的想法到现在也是过去了大概有10天吧，中间也是各种坑。不吐槽一下，实在是对不起这流去的岁月。
-刚开始想使用Django直接写一个博客，挂到自己的服务器上去。首先就是熟悉Django的基本语法，这其实都没有什么，也就是了解一下Django的MTV的模式，花点时间也是很快就可以上手，但是很快就遇到两个难点就是:
-
-没有CMS，或者说没有优秀的CMS
-前端很难写，">
+<meta name="description" content="控制台，终端，tty，shell等概念的区别使用linux已经有一段时间，却一直弄不明白这几个概念之间的区别。虽然一直在用，但是很多概念都感觉模糊不清，这样不上不下的状态实在令人不爽。下面就澄清一下这些概念。
+这些概念本身有着非常浓厚的历史气息，随着时代的发展，他们的含义也在发生改变，它们有些已经失去了最初的含义，但是它们的名字却被保留了下来。
+控制台(Console)控制台(Console)是物">
 <meta property="og:type" content="article">
-<meta property="og:title" content="The First">
-<meta property="og:url" content="http://yoursite.com/2016/01/15/My-New-Post/index.html">
+<meta property="og:title" content="(转)控制台，终端，虚拟终端，tty，shell等概念的区别">
+<meta property="og:url" content="http://yoursite.com/2016/01/18/虚拟终端和shell的区别/index.html">
 <meta property="og:site_name" content="Gift">
-<meta property="og:description" content="Hello,blog从开始有搭建一个博客的想法到现在也是过去了大概有10天吧，中间也是各种坑。不吐槽一下，实在是对不起这流去的岁月。
-刚开始想使用Django直接写一个博客，挂到自己的服务器上去。首先就是熟悉Django的基本语法，这其实都没有什么，也就是了解一下Django的MTV的模式，花点时间也是很快就可以上手，但是很快就遇到两个难点就是:
-
-没有CMS，或者说没有优秀的CMS
-前端很难写，">
-<meta property="og:updated_time" content="2016-01-16T10:49:18.000Z">
+<meta property="og:description" content="控制台，终端，tty，shell等概念的区别使用linux已经有一段时间，却一直弄不明白这几个概念之间的区别。虽然一直在用，但是很多概念都感觉模糊不清，这样不上不下的状态实在令人不爽。下面就澄清一下这些概念。
+这些概念本身有着非常浓厚的历史气息，随着时代的发展，他们的含义也在发生改变，它们有些已经失去了最初的含义，但是它们的名字却被保留了下来。
+控制台(Console)控制台(Console)是物">
+<meta property="og:updated_time" content="2016-01-18T15:03:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="The First">
-<meta name="twitter:description" content="Hello,blog从开始有搭建一个博客的想法到现在也是过去了大概有10天吧，中间也是各种坑。不吐槽一下，实在是对不起这流去的岁月。
-刚开始想使用Django直接写一个博客，挂到自己的服务器上去。首先就是熟悉Django的基本语法，这其实都没有什么，也就是了解一下Django的MTV的模式，花点时间也是很快就可以上手，但是很快就遇到两个难点就是:
-
-没有CMS，或者说没有优秀的CMS
-前端很难写，">
+<meta name="twitter:title" content="(转)控制台，终端，虚拟终端，tty，shell等概念的区别">
+<meta name="twitter:description" content="控制台，终端，tty，shell等概念的区别使用linux已经有一段时间，却一直弄不明白这几个概念之间的区别。虽然一直在用，但是很多概念都感觉模糊不清，这样不上不下的状态实在令人不爽。下面就澄清一下这些概念。
+这些概念本身有着非常浓厚的历史气息，随着时代的发展，他们的含义也在发生改变，它们有些已经失去了最初的含义，但是它们的名字却被保留了下来。
+控制台(Console)控制台(Console)是物">
 
 
 
@@ -96,7 +90,7 @@
   };
 </script>
 
-  <title> The First | Gift </title>
+  <title> (转)控制台，终端，虚拟终端，tty，shell等概念的区别 | Gift </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -226,7 +220,7 @@
             
             
               
-                The First
+                (转)控制台，终端，虚拟终端，tty，shell等概念的区别
               
             
           </h1>
@@ -238,8 +232,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-15T20:22:41+08:00" content="2016-01-15">
-              2016-01-15
+            <time itemprop="dateCreated" datetime="2016-01-18T22:50:37+08:00" content="2016-01-18">
+              2016-01-18
             </time>
           </span>
 
@@ -249,8 +243,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/15/My-New-Post/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/15/My-New-Post/" itemprop="commentsCount"></span>
+                <a href="/2016/01/18/虚拟终端和shell的区别/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/18/虚拟终端和shell的区别/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -271,17 +265,23 @@
       
 
       
-        <h2 id="Hello_2Cblog"><a href="#Hello_2Cblog" class="headerlink" title="Hello,blog"></a>Hello,blog</h2><p>从开始有搭建一个博客的想法到现在也是过去了大概有10天吧，中间也是各种<strong>坑</strong>。不吐槽一下，实在是对不起这流去的岁月。</p>
-<p>刚开始想使用<strong>Django</strong>直接写一个博客，挂到自己的服务器上去。首先就是熟悉<strong>Django</strong>的基本语法，这其实都没有什么，也就是了解一下<strong>Django</strong>的MTV的模式，花点时间也是很快就可以上手，但是很快就遇到两个难点就是:</p>
-<ol>
-<li>没有<strong>CMS</strong>，或者说没有优秀的<strong>CMS</strong></li>
-<li>前端很难写，或者说高逼格的界面很难写</li>
-</ol>
-<p>第二点通过一番搜索之后，也是让我找到了<a href="http://www.css3templates.co.uk/templates.html" target="_blank" rel="external">CSS模板</a>这个好东西，但是第一点已经不是那么好解决了，找到两个方法，一种是使用其他django中的<a href="https://github.com/klen/django_markdown" target="_blank" rel="external">django_markdown</a>的包直接集成到内置的<strong>admin</strong>中，另一种方法是使用据说很好用的<a href="http://www.django-cms.org/en/" target="_blank" rel="external">django CMS</a>这个库。</p>
-<p>好的，现在讲讲第一种解决方式中，本来前端模板渲染用的<a href="https://github.com/trentm/django-markdown-deux" target="_blank" rel="external">django-markdown-deux</a>,突然之间不知道是因为使用<a href="http://www.css3templates.co.uk/templates.html" target="_blank" rel="external">CSS模板</a>的原因，还是因为其他什么原因并不能正常的渲染<strong>markdown</strong>语法。</p>
-<p>第二种解决方案中，发现<a href="http://www.django-cms.org/en/" target="_blank" rel="external">django CMS</a>的文档中写的是支持到python2.7,恩，用的就是python2.7，但是还要<strong>requires Django 1.8</strong>,刚开始测试的时候使用的Django版本还是1.9.0，但是中间不知道什么原因(真的是不知道还是后来才发现的)，就升级到了<strong>Django 1.9.1</strong>，这个是开发版。好吧，最新的版本就并不能支持<a href="http://www.django-cms.org/en/" target="_blank" rel="external">django CMS</a>,这也就罢了，但是最重要的是<a href="http://www.django-cms.org/en/" target="_blank" rel="external">django CMS</a>的使用，并不是想之前的包一样，只需要导入或者说只需要将这个包<code>install</code>一下，然后放在<code>installed app</code>下就可以的，这个东西还要重建自己的项目。这一点就不是短期内可以实现的了。到这里，才发现开始写博客的时候，没有对所使用的架构进行好好的构思，好吧，其实在没有接触的情况下，也无法进行合理的架构。其实，即使是现在也是不能。</p>
-<p>写到这，其实不是很在意界面的话，基本的功能都已经实现了，就差部署了。但是还是总感觉不对，然后就想看看其他一些成熟的<strong>博客建立工具</strong>到底是怎么弄的，知乎上搜索了一下，选了两个，一个是<a href="https://cn.wordpress.org/" target="_blank" rel="external">wordpress</a>,一个是<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">hexo</a>,都使用相应的教程走了一遍，比如<a href="https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-on-ubuntu-14-04" target="_blank" rel="external">wordpress搭建教程</a>,还有<a href="http://www.cnblogs.com/zhcncn/p/4097881.html" target="_blank" rel="external">hexo搭建教程</a>。都是非常不错的教程，能够很快的搭建成功。最后就有了现在这个blog，才发现，现在搭建blog这个轮子也是造的那么好用和实用了呢，还是得先用了再说。</p>
-<p>最后的最后，才发现，这篇好像少了一点图片，但是就这样吧。</p>
+        <h1 id="u63A7_u5236_u53F0_uFF0C_u7EC8_u7AEF_uFF0Ctty_uFF0Cshell_u7B49_u6982_u5FF5_u7684_u533A_u522B"><a href="#u63A7_u5236_u53F0_uFF0C_u7EC8_u7AEF_uFF0Ctty_uFF0Cshell_u7B49_u6982_u5FF5_u7684_u533A_u522B" class="headerlink" title="控制台，终端，tty，shell等概念的区别"></a>控制台，终端，tty，shell等概念的区别</h1><p>使用linux已经有一段时间，却一直弄不明白这几个概念之间的区别。虽然一直在用，但是很多概念都感觉模糊不清，这样不上不下的状态实在令人不爽。下面就澄清一下这些概念。</p>
+<p>这些概念本身有着非常浓厚的历史气息，随着时代的发展，他们的含义也在发生改变，它们有些已经失去了最初的含义，但是它们的名字却被保留了下来。</p>
+<h2 id="u63A7_u5236_u53F0_28Console_29"><a href="#u63A7_u5236_u53F0_28Console_29" class="headerlink" title="控制台(Console)"></a>控制台(Console)</h2><p>控制台(Console)是物理设备，用于输入输出，它直接连接在计算机上，是计算机系统的一部分。计算机输出的信息会显示在控制台上，例如BIOS的输出，内核的输出。</p>
+<h2 id="u7EC8_u7AEF_28Terminal_29"><a href="#u7EC8_u7AEF_28Terminal_29" class="headerlink" title="终端(Terminal)"></a>终端(Terminal)</h2><p>终端(Terminal)也是一台物理设备，只用于输入输出，本身没有强大的计算能力。一台计算机只有一个控制台，在计算资源紧张的时代，人们想共享一台计算机，可以通过终端连接到计算机上，将指令输入终端，终端传送给计算机，计算机完成指令后，将输出传送给终端，终端将结果显示给用户。</p>
+<h2 id="u865A_u62DF_u63A7_u5236_u53F0_28Virtual_Console_29_uFF0C_u865A_u62DF_u7EC8_u7AEF_28Virtual_Terminal_29"><a href="#u865A_u62DF_u63A7_u5236_u53F0_28Virtual_Console_29_uFF0C_u865A_u62DF_u7EC8_u7AEF_28Virtual_Terminal_29" class="headerlink" title="虚拟控制台(Virtual Console)，虚拟终端(Virtual Terminal)"></a>虚拟控制台(Virtual Console)，虚拟终端(Virtual Terminal)</h2><p>虚拟控制台(Virtual Console)和虚拟终端是一样的。我们只有一台终端（物理设备），这是我们与计算机之间的用户接口。假如有一天，我们想拥有多个用户接口，那么，一方面我们可以增加终端数目（物理设备），另一方面，还可以在同一台终端（物理设备）上虚拟出多个终端，它们之间互相不影响，至少看起来互相不影响。这些终端就是虚拟终端。</p>
+<p>在Ubuntu中，我们按下Ctrl+Alt+Fx时，会进入第x个虚拟终端，一共有七个虚拟终端，其中第七个虚拟终端，就是我们默认使用的图形用户界面。</p>
+<h2 id="u7EC8_u7AEF_u6A21_u62DF_u5668_28Terminal_Emulator_29"><a href="#u7EC8_u7AEF_u6A21_u62DF_u5668_28Terminal_Emulator_29" class="headerlink" title="终端模拟器(Terminal Emulator)"></a>终端模拟器(Terminal Emulator)</h2><p>我们知道，终端是一种物理设备，而终端模拟器(Terminal Emulator)，是一个程序，这些程序用来模拟物理终端。图形用户界面中的终端模拟器一般称为终端窗口(Terminal Window)，我们在Ubuntu下打开的gnome-terminal就属于此类。</p>
+<h2 id="tty"><a href="#tty" class="headerlink" title="tty"></a>tty</h2><p>tty的全称是TeleTYpewriter，这就是早期的终端（物理设备），它们用于向计算机发送数据，并将计算机的返回结果打印出来。显示器出现后，终端不再将结果打印出来，而是显示在显示器上。但是tty的名字还是保留了下来。</p>
+<p>在Ubuntu中，我们按下Ctrl+Alt+F1时，会进入第1个虚拟终端，你可以看到屏幕上方显示的tty1。</p>
+<h2 id="shell"><a href="#shell" class="headerlink" title="shell"></a>shell</h2><p>shell 和之前说的几个概念截然不同，之前的几个概念都是与计算机的输入输出相关的，而shell是和内核相关的。内核为上层的应用提供了很多服务，shell在内核的上层，在应用程序的下层。例如，你写了一个 hello world 程序，你并不用显式地创建一个进程来运行你的程序，你把写好的程序交给shell就行了，由shell负责为你的程序创建进程。</p>
+<p>我们在终端模拟器中输入命令时，终端模拟器本身并不解释执行这些命令，它只负责输入输出，真正解释执行这些命令的，是shell。</p>
+<p>我们平时使用的sh, bash, csh是shell的不同实现。</p>
+<p>sh sh这个概念本身就有岐义，它可以指shell程序的名字，也代表了shell的实现。</p>
+<p>Thompson shell是第一个Unix shell，由 Ken Thompso于1971年在Unix第一版本中引入，shell的程序名即为sh。Bourne shell作为Thompson shell的替代，由 Stephen Bourne于1977年在Unix第七版中引入，它的程序名也是sh。Bourne shell不仅仅是一个命令解释器，更作为一种编程语言，提供了Thompson shell不具备的程序控制功能，并随着 Brian W. Kernighan 和 Rob Pike 的 The UNIX Programming Environment的出版而名声大噪。</p>
+<p>csh csh全称为 C Shell，由 Bill Joy在70年代晚期完成，那时候他还是加州伯克利大学的研究生。tcsh是csh的升级版。与sh不同，csh的shell脚本，语法接近于C语言。</p>
+<p>bash bash是由 Brian Fox为GNU项目开发的自由软件，作为Bourne shell的替代品，于1989年发布。是Linux和Mac OS X的默认shell。bash的命令语法是Bourne shell命令语法的超集，从ksh和csh借鉴了一些思想。</p>
+<p>转载自<a href="http://blog.csdn.net/on_1y/article/details/20203963" target="_blank" rel="external">on_1y</a></p>
 
       
     </div>
@@ -290,7 +290,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/blog/" rel="tag">#blog</a>
+            <a href="/tags/Linux-shell/" rel="tag">#Linux shell</a>
           
         </div>
       
@@ -299,13 +299,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/01/15/My-New-Post/" rel="next" title="The First">
+                <i class="fa fa-chevron-left"></i> The First
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/01/18/虚拟终端和shell的区别/" rel="prev" title="(转)控制台，终端，虚拟终端，tty，shell等概念的区别">
-                (转)控制台，终端，虚拟终端，tty，shell等概念的区别 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -331,8 +331,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/01/15/My-New-Post/"
-           data-title="The First" data-url="http://yoursite.com/2016/01/15/My-New-Post/">
+      <div class="ds-thread" data-thread-key="2016/01/18/虚拟终端和shell的区别/"
+           data-title="(转)控制台，终端，虚拟终端，tty，shell等概念的区别" data-url="http://yoursite.com/2016/01/18/虚拟终端和shell的区别/">
       </div>
     
   </div>
@@ -440,7 +440,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hello_2Cblog"><span class="nav-number">1.</span> <span class="nav-text">Hello,blog</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u63A7_u5236_u53F0_uFF0C_u7EC8_u7AEF_uFF0Ctty_uFF0Cshell_u7B49_u6982_u5FF5_u7684_u533A_u522B"><span class="nav-number">1.</span> <span class="nav-text">控制台，终端，tty，shell等概念的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#u63A7_u5236_u53F0_28Console_29"><span class="nav-number">1.1.</span> <span class="nav-text">控制台(Console)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u7EC8_u7AEF_28Terminal_29"><span class="nav-number">1.2.</span> <span class="nav-text">终端(Terminal)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u865A_u62DF_u63A7_u5236_u53F0_28Virtual_Console_29_uFF0C_u865A_u62DF_u7EC8_u7AEF_28Virtual_Terminal_29"><span class="nav-number">1.3.</span> <span class="nav-text">虚拟控制台(Virtual Console)，虚拟终端(Virtual Terminal)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u7EC8_u7AEF_u6A21_u62DF_u5668_28Terminal_Emulator_29"><span class="nav-number">1.4.</span> <span class="nav-text">终端模拟器(Terminal Emulator)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tty"><span class="nav-number">1.5.</span> <span class="nav-text">tty</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shell"><span class="nav-number">1.6.</span> <span class="nav-text">shell</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
