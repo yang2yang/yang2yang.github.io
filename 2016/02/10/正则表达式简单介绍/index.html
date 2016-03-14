@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="python repx," />
+  <meta name="keywords" content="python,repx," />
 
 
 
@@ -66,7 +66,7 @@
 <meta property="og:description" content="正则表达式简单介绍前言因为一些需要，会时不时的用到正则表达式，虽然对正则表达式也这是简单的入了门，但是为防以后忘记后可以更快的拾起来，和以后更进一步理解，所以对Python中使用正则表达式对一些简单以及我现在在使用的最常用的用法进行一些归纳总结。
 简单介绍什么是正则表达式？在编写处理字符串的程序或网页时，经常会有查找符合某些复杂规则的字符串的需要。正则表达式就是用于描述这些规则的工具。换句话说，正">
 <meta property="og:image" content="http://yoursite.com/images/repx.png">
-<meta property="og:updated_time" content="2016-02-10T09:55:34.000Z">
+<meta property="og:updated_time" content="2016-03-14T21:47:33.554Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="正则表达式简单介绍">
 <meta name="twitter:description" content="正则表达式简单介绍前言因为一些需要，会时不时的用到正则表达式，虽然对正则表达式也这是简单的入了门，但是为防以后忘记后可以更快的拾起来，和以后更进一步理解，所以对Python中使用正则表达式对一些简单以及我现在在使用的最常用的用法进行一些归纳总结。
@@ -236,6 +236,25 @@
           </span>
 
           
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
 
           
             
@@ -287,7 +306,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/python-repx/" rel="tag">#python repx</a>
+            <a href="/tags/python/" rel="tag">#python</a>
+          
+            <a href="/tags/repx/" rel="tag">#repx</a>
           
         </div>
       
@@ -303,6 +324,10 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/03/15/Arch安装过程一些注意事项/" rel="prev" title="Win10+Arch安装过程一些注意事项">
+                Win10+Arch安装过程一些注意事项 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -374,21 +399,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">12</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -673,10 +698,10 @@
     NexT.motion.middleWares.sidebar = function () {
       var $tocContent = $('.post-toc-content');
 
-      if (CONFIG.sidebar === 'post') {
+//    if (CONFIG.sidebar === 'post') {
         if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
           NexT.utils.displaySidebar();
-        }
+//      }
       }
     };
   });

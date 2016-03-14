@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Linux,shell," />
+  <meta name="keywords" content="Arch,Win10,双系统,安装," />
 
 
 
@@ -57,22 +57,22 @@
 
 
 
-<meta name="description" content="控制台，终端，tty，shell等概念的区别使用linux已经有一段时间，却一直弄不明白这几个概念之间的区别。虽然一直在用，但是很多概念都感觉模糊不清，这样不上不下的状态实在令人不爽。下面就澄清一下这些概念。
-这些概念本身有着非常浓厚的历史气息，随着时代的发展，他们的含义也在发生改变，它们有些已经失去了最初的含义，但是它们的名字却被保留了下来。
-控制台(Console)控制台(Console)是物">
+<meta name="description" content="Win10+Arch安装过程一些注意事项Start最近也是借着整理自己电脑的机会，重新将原来的win8.1+ubuntu双系统，成功地切换成了win10+arch。
+更换的原因其实就是两年多的时间里，各种东西也是随意地丢在了电脑里面，明显感觉到硬盘不堪使用了，需要好好整理一些资料了。所以就借了室友的移动硬盘把东西的保存起来。就开始装系统大业了。
+Win10win10其实没有难点，直接在msdn上面">
 <meta property="og:type" content="article">
-<meta property="og:title" content="(转)控制台，终端，虚拟终端，tty，shell等概念的区别">
-<meta property="og:url" content="http://yoursite.com/2016/01/18/虚拟终端和shell的区别/index.html">
+<meta property="og:title" content="Win10+Arch安装过程一些注意事项">
+<meta property="og:url" content="http://yoursite.com/2016/03/15/Arch安装过程一些注意事项/index.html">
 <meta property="og:site_name" content="Gift">
-<meta property="og:description" content="控制台，终端，tty，shell等概念的区别使用linux已经有一段时间，却一直弄不明白这几个概念之间的区别。虽然一直在用，但是很多概念都感觉模糊不清，这样不上不下的状态实在令人不爽。下面就澄清一下这些概念。
-这些概念本身有着非常浓厚的历史气息，随着时代的发展，他们的含义也在发生改变，它们有些已经失去了最初的含义，但是它们的名字却被保留了下来。
-控制台(Console)控制台(Console)是物">
-<meta property="og:updated_time" content="2016-03-14T21:47:54.344Z">
+<meta property="og:description" content="Win10+Arch安装过程一些注意事项Start最近也是借着整理自己电脑的机会，重新将原来的win8.1+ubuntu双系统，成功地切换成了win10+arch。
+更换的原因其实就是两年多的时间里，各种东西也是随意地丢在了电脑里面，明显感觉到硬盘不堪使用了，需要好好整理一些资料了。所以就借了室友的移动硬盘把东西的保存起来。就开始装系统大业了。
+Win10win10其实没有难点，直接在msdn上面">
+<meta property="og:updated_time" content="2016-03-14T21:45:23.507Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="(转)控制台，终端，虚拟终端，tty，shell等概念的区别">
-<meta name="twitter:description" content="控制台，终端，tty，shell等概念的区别使用linux已经有一段时间，却一直弄不明白这几个概念之间的区别。虽然一直在用，但是很多概念都感觉模糊不清，这样不上不下的状态实在令人不爽。下面就澄清一下这些概念。
-这些概念本身有着非常浓厚的历史气息，随着时代的发展，他们的含义也在发生改变，它们有些已经失去了最初的含义，但是它们的名字却被保留了下来。
-控制台(Console)控制台(Console)是物">
+<meta name="twitter:title" content="Win10+Arch安装过程一些注意事项">
+<meta name="twitter:description" content="Win10+Arch安装过程一些注意事项Start最近也是借着整理自己电脑的机会，重新将原来的win8.1+ubuntu双系统，成功地切换成了win10+arch。
+更换的原因其实就是两年多的时间里，各种东西也是随意地丢在了电脑里面，明显感觉到硬盘不堪使用了，需要好好整理一些资料了。所以就借了室友的移动硬盘把东西的保存起来。就开始装系统大业了。
+Win10win10其实没有难点，直接在msdn上面">
 
 
 
@@ -90,7 +90,7 @@
   };
 </script>
 
-  <title> (转)控制台，终端，虚拟终端，tty，shell等概念的区别 | Gift </title>
+  <title> Win10+Arch安装过程一些注意事项 | Gift </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -220,7 +220,7 @@
             
             
               
-                (转)控制台，终端，虚拟终端，tty，shell等概念的区别
+                Win10+Arch安装过程一些注意事项
               
             
           </h1>
@@ -232,8 +232,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-18T22:50:37+08:00" content="2016-01-18">
-              2016-01-18
+            <time itemprop="dateCreated" datetime="2016-03-15T04:57:01+08:00" content="2016-03-15">
+              2016-03-15
             </time>
           </span>
 
@@ -262,8 +262,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/18/虚拟终端和shell的区别/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/18/虚拟终端和shell的区别/" itemprop="commentsCount"></span>
+                <a href="/2016/03/15/Arch安装过程一些注意事项/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/Arch安装过程一些注意事项/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -284,23 +284,36 @@
       
 
       
-        <h1 id="u63A7_u5236_u53F0_uFF0C_u7EC8_u7AEF_uFF0Ctty_uFF0Cshell_u7B49_u6982_u5FF5_u7684_u533A_u522B"><a href="#u63A7_u5236_u53F0_uFF0C_u7EC8_u7AEF_uFF0Ctty_uFF0Cshell_u7B49_u6982_u5FF5_u7684_u533A_u522B" class="headerlink" title="控制台，终端，tty，shell等概念的区别"></a>控制台，终端，tty，shell等概念的区别</h1><p>使用linux已经有一段时间，却一直弄不明白这几个概念之间的区别。虽然一直在用，但是很多概念都感觉模糊不清，这样不上不下的状态实在令人不爽。下面就澄清一下这些概念。</p>
-<p>这些概念本身有着非常浓厚的历史气息，随着时代的发展，他们的含义也在发生改变，它们有些已经失去了最初的含义，但是它们的名字却被保留了下来。</p>
-<h2 id="u63A7_u5236_u53F0_28Console_29"><a href="#u63A7_u5236_u53F0_28Console_29" class="headerlink" title="控制台(Console)"></a>控制台(Console)</h2><p>控制台(Console)是物理设备，用于输入输出，它直接连接在计算机上，是计算机系统的一部分。计算机输出的信息会显示在控制台上，例如BIOS的输出，内核的输出。</p>
-<h2 id="u7EC8_u7AEF_28Terminal_29"><a href="#u7EC8_u7AEF_28Terminal_29" class="headerlink" title="终端(Terminal)"></a>终端(Terminal)</h2><p>终端(Terminal)也是一台物理设备，只用于输入输出，本身没有强大的计算能力。一台计算机只有一个控制台，在计算资源紧张的时代，人们想共享一台计算机，可以通过终端连接到计算机上，将指令输入终端，终端传送给计算机，计算机完成指令后，将输出传送给终端，终端将结果显示给用户。</p>
-<h2 id="u865A_u62DF_u63A7_u5236_u53F0_28Virtual_Console_29_uFF0C_u865A_u62DF_u7EC8_u7AEF_28Virtual_Terminal_29"><a href="#u865A_u62DF_u63A7_u5236_u53F0_28Virtual_Console_29_uFF0C_u865A_u62DF_u7EC8_u7AEF_28Virtual_Terminal_29" class="headerlink" title="虚拟控制台(Virtual Console)，虚拟终端(Virtual Terminal)"></a>虚拟控制台(Virtual Console)，虚拟终端(Virtual Terminal)</h2><p>虚拟控制台(Virtual Console)和虚拟终端是一样的。我们只有一台终端（物理设备），这是我们与计算机之间的用户接口。假如有一天，我们想拥有多个用户接口，那么，一方面我们可以增加终端数目（物理设备），另一方面，还可以在同一台终端（物理设备）上虚拟出多个终端，它们之间互相不影响，至少看起来互相不影响。这些终端就是虚拟终端。</p>
-<p>在Ubuntu中，我们按下Ctrl+Alt+Fx时，会进入第x个虚拟终端，一共有七个虚拟终端，其中第七个虚拟终端，就是我们默认使用的图形用户界面。</p>
-<h2 id="u7EC8_u7AEF_u6A21_u62DF_u5668_28Terminal_Emulator_29"><a href="#u7EC8_u7AEF_u6A21_u62DF_u5668_28Terminal_Emulator_29" class="headerlink" title="终端模拟器(Terminal Emulator)"></a>终端模拟器(Terminal Emulator)</h2><p>我们知道，终端是一种物理设备，而终端模拟器(Terminal Emulator)，是一个程序，这些程序用来模拟物理终端。图形用户界面中的终端模拟器一般称为终端窗口(Terminal Window)，我们在Ubuntu下打开的gnome-terminal就属于此类。</p>
-<h2 id="tty"><a href="#tty" class="headerlink" title="tty"></a>tty</h2><p>tty的全称是TeleTYpewriter，这就是早期的终端（物理设备），它们用于向计算机发送数据，并将计算机的返回结果打印出来。显示器出现后，终端不再将结果打印出来，而是显示在显示器上。但是tty的名字还是保留了下来。</p>
-<p>在Ubuntu中，我们按下Ctrl+Alt+F1时，会进入第1个虚拟终端，你可以看到屏幕上方显示的tty1。</p>
-<h2 id="shell"><a href="#shell" class="headerlink" title="shell"></a>shell</h2><p>shell 和之前说的几个概念截然不同，之前的几个概念都是与计算机的输入输出相关的，而shell是和内核相关的。内核为上层的应用提供了很多服务，shell在内核的上层，在应用程序的下层。例如，你写了一个 hello world 程序，你并不用显式地创建一个进程来运行你的程序，你把写好的程序交给shell就行了，由shell负责为你的程序创建进程。</p>
-<p>我们在终端模拟器中输入命令时，终端模拟器本身并不解释执行这些命令，它只负责输入输出，真正解释执行这些命令的，是shell。</p>
-<p>我们平时使用的sh, bash, csh是shell的不同实现。</p>
-<p>sh sh这个概念本身就有岐义，它可以指shell程序的名字，也代表了shell的实现。</p>
-<p>Thompson shell是第一个Unix shell，由 Ken Thompso于1971年在Unix第一版本中引入，shell的程序名即为sh。Bourne shell作为Thompson shell的替代，由 Stephen Bourne于1977年在Unix第七版中引入，它的程序名也是sh。Bourne shell不仅仅是一个命令解释器，更作为一种编程语言，提供了Thompson shell不具备的程序控制功能，并随着 Brian W. Kernighan 和 Rob Pike 的 The UNIX Programming Environment的出版而名声大噪。</p>
-<p>csh csh全称为 C Shell，由 Bill Joy在70年代晚期完成，那时候他还是加州伯克利大学的研究生。tcsh是csh的升级版。与sh不同，csh的shell脚本，语法接近于C语言。</p>
-<p>bash bash是由 Brian Fox为GNU项目开发的自由软件，作为Bourne shell的替代品，于1989年发布。是Linux和Mac OS X的默认shell。bash的命令语法是Bourne shell命令语法的超集，从ksh和csh借鉴了一些思想。</p>
-<p>转载自<a href="http://blog.csdn.net/on_1y/article/details/20203963" target="_blank" rel="external">on_1y</a></p>
+        <h1 id="Win10+Arch_u5B89_u88C5_u8FC7_u7A0B_u4E00_u4E9B_u6CE8_u610F_u4E8B_u9879"><a href="#Win10+Arch_u5B89_u88C5_u8FC7_u7A0B_u4E00_u4E9B_u6CE8_u610F_u4E8B_u9879" class="headerlink" title="Win10+Arch安装过程一些注意事项"></a>Win10+Arch安装过程一些注意事项</h1><h2 id="Start"><a href="#Start" class="headerlink" title="Start"></a>Start</h2><p>最近也是借着整理自己电脑的机会，重新将原来的<strong>win8.1</strong>+<strong>ubuntu</strong>双系统，成功地切换成了<strong>win10</strong>+<strong>arch</strong>。</p>
+<p>更换的原因其实就是两年多的时间里，各种东西也是随意地丢在了电脑里面，明显感觉到硬盘不堪使用了，需要好好整理一些资料了。<br>所以就借了室友的移动硬盘把东西的保存起来。就开始装系统大业了。</p>
+<h2 id="Win10"><a href="#Win10" class="headerlink" title="Win10"></a>Win10</h2><p><strong>win10</strong>其实没有难点，直接在<a href="http://msdn.itellyou.cn/" target="_blank" rel="external">msdn</a>上面下载原始镜像，使用刻盘工具就可以安装了，不再详述。</p>
+<h2 id="Arch"><a href="#Arch" class="headerlink" title="Arch"></a>Arch</h2><p>提到这个东西，说多了都是泪。我不知道你要装几次，反正我是装了好几次。</p>
+<p>首先作为一个初次接触这个<strong>Arch</strong>的人来说，一个简单的安装教程是很重要的。我比较推荐使用<a href="http://wawei.gitcafe.io/2015/12/09/Enjoy-arch-1/" target="_blank" rel="external">Enjoy arch</a><br>这篇文章。这篇文章的优点就是将wiki里面的东西整理的很好。wiki很好也很全，但是可能就是因为这一点就导致一个面向一个只想知道<br>安装过程的人需要读大量的wiki，自己去消化理解才能初步地去安装，这样就太累了。所以这个<a href="http://wawei.gitcafe.io/2015/12/09/Enjoy-arch-1/" target="_blank" rel="external">Enjoy arch</a><br>就比较好。</p>
+<p>我就不想重复重复造轮子，也造不出更好的。但是可能因为时间的原因，有些事情发生了，总之这篇教程有些东西需要注意一下，才能<br>很好的安装。</p>
+<ol>
+<li><p><strong>Enjoy arch —— 安装arch</strong>中<strong>配置网络</strong>中不能开启dhcpcd服务，不然会导致无线网络连接不上。<br>当然如果你是用的自动分配的有线网络的话，应该没有问题。</p>
+</li>
+<li><p><strong>Enjoy arch —— 安装arch</strong>中<strong>配置镜像</strong></p>
+<ul>
+<li>Server = <a href="http://mirrors.hustunique.com/archlinux/$repo/os/$arch" target="_blank" rel="external">http://mirrors.hustunique.com/archlinux/$repo/os/$arch</a></li>
+<li>Server = <a href="http://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch" target="_blank" rel="external">http://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch</a></li>
+</ul>
+<p>先使用清华的源，后来清华的源不行了，就换另一个源。一般速度很保持上M的速度。</p>
+</li>
+<li><p><strong>Enjoy arch —— 基础配置</strong>中<strong>添加archlinuxcn源</strong>中</p>
+<ul>
+<li>[archlinuxcn]</li>
+<li>SigLevel = Optional TrustAll</li>
+<li>Server = <a href="http://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch" target="_blank" rel="external">http://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch</a></li>
+</ul>
+<p>必须一模一样地写入<strong>pacman.conf</strong>中。然后强制刷新<strong>archlinuxcn仓库</strong>，不然会导致yaourt无法安装。<br>或者出现使用<strong>yaourt</strong>安装一些东西其实缓慢的情况。</p>
+</li>
+<li><p><strong>Enjoy arch —— 基础配置</strong>中<strong>安装图形界面</strong>安装<strong>xorg</strong>时，会出现4选一的情况，这个时候必须选择默认<br>的情况，其实这个是<a href="https://wiki.archlinux.org/index.php/Xorg" target="_blank" rel="external">wiki</a>中<strong>OpenGL</strong>中的，必须对号入座<br>。但是有一点是这样的，如果你是笔记本，那么进入<strong>Arch</strong>桌面的时候，必须是要有核显的才能进入。一般核显都是<strong>Intel</strong>，所以都是<br>使用默认的<strong>mesa-libgl</strong>。之后，安装显卡驱动<strong>xf86-video-intel</strong>，这个是对应的<strong>Intel</strong>驱动。一般教程上<br>都是<strong>xf86-video-nouveau</strong>，但是这个是兼容所有的驱动，所以驱动做的不是很好。</p>
+</li>
+<li><p>另外一般笔记本都是双显卡驱动的，这个时候必须看wiki的ble。如果，这个配置不好的话，会出现进入不了系统的情况。<br>一般就是输入完密码后，直接黑屏，卡死。所以，我推荐不安装双显卡，其实核显可以的话，对于<strong>Arch</strong>来说是够了的。</p>
+</li>
+</ol>
+<h2 id="The_end"><a href="#The_end" class="headerlink" title="The end"></a>The end</h2><p>这些都是自己理解的东西，肯定会有不对的地方，还望见谅并指正。</p>
 
       
     </div>
@@ -309,9 +322,13 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Linux/" rel="tag">#Linux</a>
+            <a href="/tags/Arch/" rel="tag">#Arch</a>
           
-            <a href="/tags/shell/" rel="tag">#shell</a>
+            <a href="/tags/Win10/" rel="tag">#Win10</a>
+          
+            <a href="/tags/双系统/" rel="tag">#双系统</a>
+          
+            <a href="/tags/安装/" rel="tag">#安装</a>
           
         </div>
       
@@ -320,17 +337,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/15/My-New-Post/" rel="next" title="The First">
-                <i class="fa fa-chevron-left"></i> The First
+              <a href="/2016/02/10/正则表达式简单介绍/" rel="next" title="正则表达式简单介绍">
+                <i class="fa fa-chevron-left"></i> 正则表达式简单介绍
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/02/10/正则表达式简单介绍/" rel="prev" title="正则表达式简单介绍">
-                正则表达式简单介绍 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -356,8 +369,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/01/18/虚拟终端和shell的区别/"
-           data-title="(转)控制台，终端，虚拟终端，tty，shell等概念的区别" data-url="http://yoursite.com/2016/01/18/虚拟终端和shell的区别/">
+      <div class="ds-thread" data-thread-key="2016/03/15/Arch安装过程一些注意事项/"
+           data-title="Win10+Arch安装过程一些注意事项" data-url="http://yoursite.com/2016/03/15/Arch安装过程一些注意事项/">
       </div>
     
   </div>
@@ -469,7 +482,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u63A7_u5236_u53F0_uFF0C_u7EC8_u7AEF_uFF0Ctty_uFF0Cshell_u7B49_u6982_u5FF5_u7684_u533A_u522B"><span class="nav-number">1.</span> <span class="nav-text">控制台，终端，tty，shell等概念的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#u63A7_u5236_u53F0_28Console_29"><span class="nav-number">1.1.</span> <span class="nav-text">控制台(Console)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u7EC8_u7AEF_28Terminal_29"><span class="nav-number">1.2.</span> <span class="nav-text">终端(Terminal)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u865A_u62DF_u63A7_u5236_u53F0_28Virtual_Console_29_uFF0C_u865A_u62DF_u7EC8_u7AEF_28Virtual_Terminal_29"><span class="nav-number">1.3.</span> <span class="nav-text">虚拟控制台(Virtual Console)，虚拟终端(Virtual Terminal)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u7EC8_u7AEF_u6A21_u62DF_u5668_28Terminal_Emulator_29"><span class="nav-number">1.4.</span> <span class="nav-text">终端模拟器(Terminal Emulator)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tty"><span class="nav-number">1.5.</span> <span class="nav-text">tty</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shell"><span class="nav-number">1.6.</span> <span class="nav-text">shell</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Win10+Arch_u5B89_u88C5_u8FC7_u7A0B_u4E00_u4E9B_u6CE8_u610F_u4E8B_u9879"><span class="nav-number">1.</span> <span class="nav-text">Win10+Arch安装过程一些注意事项</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Start"><span class="nav-number">1.1.</span> <span class="nav-text">Start</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Win10"><span class="nav-number">1.2.</span> <span class="nav-text">Win10</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Arch"><span class="nav-number">1.3.</span> <span class="nav-text">Arch</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#The_end"><span class="nav-number">1.4.</span> <span class="nav-text">The end</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

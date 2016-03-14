@@ -279,9 +279,9 @@ $(document).ready(function () {
     },
 
     sidebar: function (integrator) {
-      if (CONFIG.sidebar === 'always') {
+//    if (CONFIG.sidebar === 'always') {
         NexT.utils.displaySidebar();
-      }
+//    }
       integrator.next();
     }
   };
